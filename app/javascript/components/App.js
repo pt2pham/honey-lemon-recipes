@@ -8,14 +8,12 @@ import Submit from '../components/Submit'
 class App extends Component {
   render() {
     return (
-      <div>
-          <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/recipes" component={Recipes} />
-              <Route exact path="/submit" component={Submit} />
-              <Route exact path="/about" component={About} />
-          </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/recipes" component={Recipes} />
+        <Route exact path="/submit" component={Submit} />
+        <Route exact path="/about" component={About} />
+      </Switch>
     )
   }
 }
