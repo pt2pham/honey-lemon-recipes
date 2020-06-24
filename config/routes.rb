@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
   root 'pages#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  ### API Routes
+  # namespace :api do
+  #   namespace :v1 do
+  #     resources :recipes, param: :slug
+  #   end
+  # end
+
+  ### Frontend React Routes
+  match '*path', to: 'pages#index', via: :all
 end
