@@ -4,11 +4,13 @@ import Home from './Home'
 import About from './About'
 import Recipes from './Recipes'
 import Submit from './Submit'
+import NavBar from './NavBar'
 
 class App extends Component {
   render() {
     return (
       <div>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/recipes" component={Recipes} />
