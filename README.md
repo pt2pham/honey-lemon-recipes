@@ -13,3 +13,13 @@ Our Figma Design: https://www.figma.com/file/MkYtJqKaGqDipyOHS1MtVD/Recipe-Repos
 * Rails v5.2.3
 
 ## First time setup
+
+Run the installation script `install.sh`
+
+`$ ./install.sh`
+
+This should install all necessary dependencies to the system, and runs `yarn install` and `bundle install` to get it everything setup. 
+
+## Running the project
+
+`$ rails server` or `$ rails s` 
