@@ -6,7 +6,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
       t.string :food_type, null: false
       t.string :serving_size, null: false
       t.integer :duration, null: false
-      t.text :ingredients, null: false
+      t.text :ingredients, null: false # I might make this be a relation to an Ingredients model 
       t.text :instructions, null: false
       t.text :notes
       t.text :tags
